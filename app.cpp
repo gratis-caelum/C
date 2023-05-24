@@ -1,9 +1,10 @@
 #include <iostream>
-#include "Truck.h"
-
-// driver code
+#include "Truck.h" 
+#ifndef Truck.h
+// driver code 
 using std::cout;
 using std::endl;
+using std::cin;
 int main() {
   
   char exit;
@@ -62,3 +63,4 @@ int main() {
   }while (exit == 'N');
   return 0;
 }
+#endif

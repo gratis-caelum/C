@@ -1,20 +1,21 @@
 #include "Person.h"
+#ifndef Person.h
 // person class implementation
-using namespace std;
+
 // defalut constructor 
 Person::Person() {
   name = ""; 
 }
-// copy constructor
+// Initialization 
 Person::Person(string theName) {
   name = theName;
 }
-// hmm
+// copy constructor 
 Person::Person(const Person& theObject) {
   name = theObject.name;
 }
 // constructor with value for one data member as argument
-string Person::getName() const {
+string Person::getName() const { 
   return name;
 }
 // copy substitution constructor 
@@ -25,7 +26,7 @@ Person& Person::operator = (const Person& rtSide) {
   this -> name = rtSide.name;
   return *this;
 }
-
+// two overload operator 
 istream& operator >> (istream& inStream, Person& personObject) {
   inStream >> personObject.name;
   return inStream;
@@ -33,5 +34,6 @@ istream& operator >> (istream& inStream, Person& personObject) {
 
 ostream& operator << (ostream& outStream, const Person& personObject) {
   outStream << personObject.name;
-  return outStream;
+  return outStream; 
 } 
+#endif

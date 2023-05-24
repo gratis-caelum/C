@@ -1,6 +1,8 @@
+#include <iostream>
 #include "Truck.h"
+#ifndef Truck.h
 // Truck class implementation
-using namespace std;
+
 // default constructor
 Truck::Truck() : Vehicle() {
   loadCapacity = 0.0;
@@ -38,4 +40,4 @@ Truck& Truck::operator=(const Truck& rtSide) {
   }
 }
 
-
+#endif

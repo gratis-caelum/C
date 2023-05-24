@@ -1,7 +1,7 @@
 #include "Person.h"
 // Vehicle class interface
-using namespace std;
 
+using std::string;
 class Vehicle {
 public:
   Vehicle();

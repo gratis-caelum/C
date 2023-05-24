@@ -1,9 +1,10 @@
 #include "Vehicle.h"
+#ifndef Vehicle.h
 // Vehicle class implementation
-using namespace std;
+
 // default constructor
 Vehicle::Vehicle() {
-  manufacturerName = " ";
+  manufacturerName = "";
   numCylinders = 0;
   owner = Person();
 }
@@ -46,3 +47,4 @@ Vehicle& Vehicle::operator=(const Vehicle& rtSide) {
     }
   }
 
+#endif

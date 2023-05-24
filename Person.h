@@ -1,7 +1,8 @@
 #include <string>
 // person class interface
-using namespace std;
-
+using std::istream;
+using std::ostream;
+using std::string;
 class Person {
 public:
   Person();
