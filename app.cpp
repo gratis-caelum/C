@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cassert>
 #include "Truck.h"
 
 // driver code
